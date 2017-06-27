@@ -1,6 +1,8 @@
 ﻿using System;
+using Microsoft.Azure.Mobile.Crashes;
 
 using UIKit;
+using Microsoft.Azure.Mobile;
 
 namespace iOSXamarinTestCT
 {
@@ -14,6 +16,7 @@ namespace iOSXamarinTestCT
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Crashes.GenerateTestCrash();
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
@@ -22,5 +25,6 @@ namespace iOSXamarinTestCT
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
     }
 }
